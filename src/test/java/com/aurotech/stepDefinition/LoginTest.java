@@ -1,35 +1,21 @@
 package com.aurotech.stepDefinition;
 
-import java.net.URL;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-
-
-
 
 public class LoginTest {
 	
 	WebDriver driver;
 	@Given("^Launch Firefox and start application$")
 	public void launch_Firefox_and_start_application() throws Throwable {
-		
-		DesiredCapabilities cap=DesiredCapabilities.firefox();
-		cap.setPlatform(Platform.XP);
-		URL url=new URL("http://ec2-34-224-214-70.compute-1.amazonaws.com:4444/wd/hub");
-		WebDriver driver=new RemoteWebDriver(url, cap);
-		
-		//System.setProperty("webdriver.gecko.driver","D:\\Profiles\\Durga\\Downloads\\geckodriver-v0.19.1-win64\\geckodriver.exe");
-		//driver=new FirefoxDriver();
+		System.setProperty("webdriver.gecko.driver","D:\\Profiles\\Durga\\Downloads\\geckodriver-v0.19.1-win64\\geckodriver.exe");
+		driver=new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get("http://ec2-34-227-96-149.compute-1.amazonaws.com:8080/SimpleWebApp/login");
 		
