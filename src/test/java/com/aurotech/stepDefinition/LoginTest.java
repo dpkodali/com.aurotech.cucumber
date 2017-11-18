@@ -10,7 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -19,14 +19,15 @@ public class LoginTest {
 	
 	private WebDriver driver;
 	
+	@Before
 	public void setUpRemote() throws Throwable {
 	
 		
-	DesiredCapabilities cap=DesiredCapabilities.firefox();
+	DesiredCapabilities cap= new DesiredCapabilities();
 	cap.setPlatform(Platform.XP);
 	URL url=new URL("http://ec2-34-224-214-70.compute-1.amazonaws.com:4444/wd/hub");
-	WebDriver driver=new RemoteWebDriver(url, cap);
-    driver.get("http://ec2-34-227-96-149.compute-1.amazonaws.com:8080/SimpleWebApp/login");
+	driver=new RemoteWebDriver(url, cap);
+    //driver.get("http://ec2-34-227-96-149.compute-1.amazonaws.com:8080/SimpleWebApp/login");
 	
 		
 	}
