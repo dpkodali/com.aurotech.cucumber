@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.aurotech.cucumber.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.259 sec <<< FAILURE!
-com.aurotech.cucumber.TestRunner  Time elapsed: 0.258 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.28 sec <<< FAILURE!
+com.aurotech.cucumber.TestRunner  Time elapsed: 0.279 sec  <<< ERROR!
 java.lang.NoSuchMethodError: org.junit.runner.Description.createSuiteDescription(Ljava/lang/String;Ljava/io/Serializable;[Ljava/lang/annotation/Annotation;)Lorg/junit/runner/Description;
 	at cucumber.runtime.junit.FeatureRunner.getDescription(FeatureRunner.java:43)
 	at cucumber.api.junit.Cucumber.describeChild(Cucumber.java:88)
