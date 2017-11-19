@@ -23,10 +23,10 @@ public class LoginTest {
 	public void setUpRemote() throws Throwable {
 	
 		
-	DesiredCapabilities cap= new DesiredCapabilities();
-	cap.setPlatform(Platform.XP);
-	URL url=new URL("http://ec2-34-224-214-70.compute-1.amazonaws.com:4444/wd/hub");
-	driver=new RemoteWebDriver(url, cap);
+		DesiredCapabilities cap=DesiredCapabilities.chrome();
+		cap.setPlatform(Platform.XP);
+		URL url=new URL("http://ec2-34-224-214-70.compute-1.amazonaws.com:4444/wd/hub");
+		driver=new RemoteWebDriver(url, cap);
     //driver.get("http://ec2-34-227-96-149.compute-1.amazonaws.com:8080/SimpleWebApp/login");
 	
 		
