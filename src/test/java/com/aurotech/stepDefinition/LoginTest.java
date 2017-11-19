@@ -57,6 +57,10 @@ public class LoginTest {
 		driver.findElement(By.id("submit")).click();
 		
 	}
+	@Then("^application should be closed$")
+	public void application_should_be_closed() throws Throwable {
+	    driver.quit();
+	}
 
 	
 }

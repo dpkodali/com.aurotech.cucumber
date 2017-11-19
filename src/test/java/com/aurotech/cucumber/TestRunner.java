@@ -6,7 +6,11 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="features",glue={"com.aurotech.stepDefinition"})
+@CucumberOptions(
+		features="features",
+		glue={"com.aurotech.stepDefinition"},
+		plugin={"html:target/cucumber-html-report"}
+		)
 
 public class TestRunner {
 	
