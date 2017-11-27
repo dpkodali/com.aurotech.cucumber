@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 2891854770,
+  "duration": 7917285333,
   "status": "passed"
 });
 formatter.scenario({
@@ -42,28 +42,28 @@ formatter.match({
   "location": "LoginTest.launch_Firefox_and_start_application()"
 });
 formatter.result({
-  "duration": 641245128,
+  "duration": 556565333,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_enter_valid_username_and_valid_password()"
 });
 formatter.result({
-  "duration": 473722667,
+  "duration": 238781128,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.user_should_be_able_to_login_successfully()"
 });
 formatter.result({
-  "duration": 231490872,
+  "duration": 982747487,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.application_should_be_closed()"
 });
 formatter.result({
-  "duration": 1142531282,
+  "duration": 925021127,
   "status": "passed"
 });
 });
